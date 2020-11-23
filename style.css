@@ -1,0 +1,153 @@
+/* header below ---------------------*/
+.header {
+    padding: 10px;
+    text-align: right;
+    background:#5a7698;
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-size: 60px;
+    color: #44494e;
+    margin: 20px;
+}
+
+
+.header p {
+    font-family: sans-serif;
+    margin: -27px 25px 20px ;
+        
+}
+
+/* nav below ----------------------*/
+.nav {
+    overflow: hidden;
+    background-color: #333;
+    border-top: 1px solid white;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* tabs below ---------------------------*/
+.tabs {
+    overflow: hidden;
+    border:1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+.tabs button:active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent .wordBlock {
+    display: block;
+    position: absolute;
+    top: 280px;
+    padding-right: 40px;
+    color: rgb(192, 192, 192);
+    width: 250px;
+    background-color: rgba(39, 14, 14, 0.336);
+    text-align: right;
+}
+
+.tabcontent h3 {
+    font-size: 30px;
+    margin: 10px 0 0 0;
+}
+
+.tabcontent p {
+    font-size: 12px;
+    margin: 5px 0 15px;
+}
+
+.tabcontent img {
+    width: 100%;
+    position: relative;
+}
+
+.tabcontent .close {
+    display: block;
+    font-size: 20px;
+    color: lightblue;
+    position: relative;
+    right: -97%;
+    margin: 5px;
+}
+/* column layout --------------------*/
+
+* {
+    box-sizing: border-box; /* maintain proper sizing*/
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.side {
+    flex: 20%;
+    background-color: #33648d;
+    padding: 20px;
+}
+
+.main {
+    flex: 80%;
+    background-color: #226297;
+    padding: 20px;
+}
+
+/*footer below ---------------------------*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* MEDIA QUERYS ---------------------------*/
+@media screen and (max-width: 800px) {
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav a {
+        float: none;
+        width: 100%;
+    }
+}

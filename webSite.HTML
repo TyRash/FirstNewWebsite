@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+<body>
+    <header class='header'>
+        <h1>Tyler Rash</h1>
+        <div>
+            <p>Jr. Developer / Creator / ---</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="#">click</a>
+        <a href="#">here!</a>
+        <a href="#">No!</a>
+        <a href="#">here!</a>
+    </nav>
+<!-- tabs -->
+    <div class="tabs"> 
+        <button class="tablinks" onclick="openTab(event, 'PIC1')"> PIC 1</button>
+        <button class="tablinks" onclick="openTab(event, 'PIC2')"> PIC 2</button> 
+        <button class="tablinks" onclick="openTab(event, 'PIC3')"> PIC 3</button>
+    </div>
+<!--tab content -->
+    <div id="PIC1" class="tabcontent">
+        <img src="images/devilChild.jpg" alt="devChild">
+        <span class="wordBlock">
+            <h3>Devil Child</h3>
+            <p> Artist: Tyler Rash</p>
+        </span>
+        <span class="close" onclick="this.parentElement.style.display='none'">close</span>   <!--NEED TO ADD PICTURES to html-->
+    </div>  
+    
+    <div id="PIC2" class="tabcontent">  
+        <img src="images/chun-lo-tiger-lq.jpg" alt="tiger">
+        <span class="wordBlock">
+            <h3>Chun-lo-tiger</h3>        
+            <p> Artist: unkown</p>
+        </span> 
+        <span class="close" onclick="this.parentElement.style.display='none'">close</span>    <!--ADD PICTURES-->
+    </div>
+
+    <div id="PIC3" class="tabcontent">
+        <img src="images/godzilla.png" alt="zilla">
+        <span class="wordBlock">
+            <h3>Godzilla King of Monsters</h3>
+            <p> Artist: unkown</p>
+        </span>
+        <span class="close" onclick="this.parentElement.style.display='none'">close</span>   <!--ADD PICTURES-->
+    </div>
+<!--end tabs-->
+    <article class="row">
+        <div class="side">recent projects</div>
+        <div class="main">some info about meeeeeeeeeeeeeee</div>
+    </article>
+    <footer class="footer">
+        <h2>footer place holder</h2>
+    </footer>
+</body>
+
+<script src="javascript.js"></script>
+
+</html>
